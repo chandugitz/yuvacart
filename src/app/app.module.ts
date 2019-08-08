@@ -28,7 +28,10 @@ import { OptionsComponent } from './theme/components/options/options.component';
 import { FooterComponent } from './theme/components/footer/footer.component';
 import { ShareButtonsModule } from '@ngx-share/buttons';
 
+
+
 import { ShareModule } from '@ngx-share/core';
+import { AuthGaurdService } from './auth-gaurd.service';
 @NgModule({
    imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { ShareModule } from '@ngx-share/core';
   ], 
   providers: [
     AppSettings,
-    AppService,   
+    AppService,
+    AuthGaurdService,
     { provide: OverlayContainer, useClass: CustomOverlayContainer },
     { provide: MAT_MENU_SCROLL_STRATEGY, useFactory: menuScrollStrategy, deps: [Overlay] },
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true }

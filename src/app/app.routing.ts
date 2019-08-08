@@ -15,7 +15,8 @@ export const routes: Routes = [
       {
         path: "account",
         loadChildren: "app/pages/account/account.module#AccountModule",
-        data: { breadcrumb: "Account Settings" }
+        data: { breadcrumb: "Account Settings" },
+        canActivate: [AuthGaurdService]
       },
       // { path: 'compare', loadChildren: 'app/pages/compare/compare.module#CompareModule', data: { breadcrumb: 'Compare' } },
 

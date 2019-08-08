@@ -29,4 +29,8 @@ export class AuthService {
     localStorage.removeItem('token')
     this._router.navigate(['/sign-in'])
   }
+
+  getToken(){
+    return localStorage.getItem('token')
+  }
 }
