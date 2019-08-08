@@ -1,0 +1,177 @@
+[    
+    { 
+        "id": 1,
+        "name": "LENOVO",
+        "images": [
+            {
+                
+                "small": "../src/assets/images/Lenovo-1.jpg",
+                "medium": "../src/assets/images/Lenovo-1.jpg",
+                "big": "../src/assets/images/Lenovo-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-1.jpg",
+                "medium": "../src/assets/images/Lenovo-1.jpg",
+                "big": "../src/assets/images/Lenovo-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-1.jpg",
+                "medium": "../src/assets/images/Lenovo-1.jpg",
+                "big": "../src/assets/images/Lenovo-1.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 475,
+        "discount": null,
+        "ratingsCount": 7,
+        "ratingsValue": 550,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 5,
+        "categoryId": 32
+    },
+    { 
+        "id": 2,
+        "name": "ASUS",
+        "images": [
+            {
+                "small": "../src/assets/images/Lenovo-3.jpg",
+                "medium": "../src/assets/images/Lenovo-3.jpg",
+                "big": "../src/assets/images/Lenovo-3.jpg"
+            },
+            {  
+                "small": "../src/assets/images/Lenovo-3.jpg",
+                "medium": "../src/assets/images/Lenovo-3.jpg",
+                "big": "../src/assets/images/Lenovo-3.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-3.jpg",
+                "medium": "../src/assets/images/Lenovo-3.jpg",
+                "big": "../src/assets/images/Lenovo-3.jpg"
+            }
+        ],
+        "oldPrice": 510,
+        "newPrice": 179.99,
+        "discount": 5,
+        "ratingsCount": 6,
+        "ratingsValue": 600,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 3,
+        "categoryId": 150
+    },    
+    { 
+        "id": 3,
+        "name": "DELL",
+        "images": [
+            {
+                "small": "../src/assets/images/Lenovo-4.jpg",
+                "medium": "../src/assets/images/Lenovo-4.jpg",
+                "big": "../src/assets/images/Lenovo-4.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-4.jpg",
+                "medium": "../src/assets/images/Lenovo-4.jpg",
+                "big": "../src/assets/images/Lenovo-4.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-4.jpg",
+                "medium": "../src/assets/images/Lenovo-4.jpg",
+                "big": "../src/assets/images/Lenovo-4.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 30,
+        "discount": null,
+        "ratingsCount": 11,
+        "ratingsValue": 1050,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 5,
+        "categoryId": 200
+    },   
+    { 
+        "id": 4,
+        "name": "ACER",
+        "images": [
+            {
+                "small": "../src/assets/images/Lenovo-6.jpg",
+                "medium": "../src/assets/images/Lenovo-6.jpg",
+                "big": "../src/assets/images/Lenovo-6.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-6.jpg",
+                "medium": "../src/assets/images/Lenovo-6.jpg",
+                "big": "../src/assets/images/Lenovo-6.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-6.jpg",
+                "medium": "../src/assets/images/Lenovo-6.jpg",
+                "big": "../src/assets/images/Lenovo-6.jpg"
+            }
+        ],
+        "oldPrice": 655,
+        "newPrice": 379.99,
+        "discount": 20,
+        "ratingsCount": 6,
+        "ratingsValue": 500,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 2,
+        "categoryId": 250
+    },
+    { 
+        "id": 5,
+        "name": "APPLE",
+        "images": [
+            {
+                "small": "../src/assets/images/Lenovo.jpg",
+                "medium": "../src/assets/images/Lenovo.jpg",
+                "big": "../src/assets/images/Lenovo.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo.jpg",
+                "medium": "../src/assets/images/Lenovo.jpg",
+                "big": "../src/assets/images/Lenovo.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo.jpg",
+                "medium": "../src/assets/images/Lenovo.jpg",
+                "big": "../src/assets/images/Lenovo.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 876,
+        "discount": null,
+        "ratingsCount": 2,
+        "ratingsValue": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 0,
+        "categoryId": 200
+    },
+    { 
+        "id": 6,
+        "name": "HP",
+        "images": [
+            {
+                "small": "../src/assets/images/Lenovo-1.jpg",
+                "medium": "../src/assets/images/Lenovo-1.jpg",
+                "big": "../src/assets/images/Lenovo-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-1.jpg",
+                "medium": "../src/assets/images/Lenovo-1.jpg",
+                "big": "../src/assets/images/Lenovo-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/Lenovo-1.jpg",
+                "medium": "../src/assets/images/Lenovo-1.jpg",
+                "big": "../src/assets/images/Lenovo-1.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 450,
+        "discount": null,
+        "ratingsCount": 4,
+        "ratingsValue": 300,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 3,
+        "categoryId": 150
+    }
+]

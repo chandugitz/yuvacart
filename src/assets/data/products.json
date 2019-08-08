@@ -1,0 +1,224 @@
+[    
+    { 
+        "id": 1,
+        "name": "LENOVO",
+        "images": [
+            {
+                "small": "../src/assets/pic.jpg",
+            "medium": "../src/assets/pic.jpg",
+            "big": "../src/assets/pic.jpg"
+            },
+            {
+                "small": "../src/assets/pic.jpg",
+                "medium": "../src/assets/pic.jpg",
+                "big": "../src/assets/pic.jpg"
+            },
+            {
+                "small": "../src/assets/pic.jpg",
+            "medium": "../src/assets/pic.jpg",
+            "big": "../src/assets/pic.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 34999,
+        "discount": null,
+        "ratingsCount": 4,
+        "ratingsValue": 350,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 5,
+        "color": ["#5C6BC0","#66BB6A","#90A4AE"],
+        "size": ["S","M","L", "XL"],
+        "weight": 150,
+        "categoryId": 100
+    },
+    { 
+        "id": 2,
+        "name": "ASUS",
+        "images": [
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            }
+        ],
+        "oldPrice": 2510,
+        "newPrice": 99,
+        "discount": 15,
+        "ratingsCount": 8,
+        "ratingsValue": 800,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 3,
+        "color": ["#1D1D1D","#DADADA","#597087"],
+        "size": ["24''","28''","32''"],
+        "weight": 9550,
+        "categoryId": 100
+    },    
+    { 
+        "id": 3,
+        "name": "DELL",
+        "images": [
+            {
+                "small": "../src/assets/pic2.jpg",
+                "medium":  "../src/assets/pic2.jpg",
+                "big":   "../src/assets/pic2.jpg"
+            },
+            {
+                "small": "../src/assets/pic2.jpg",
+                "medium":  "../src/assets/pic2.jpg",
+                "big":   "../src/assets/pic2.jpg"
+            },
+            {
+                "small": "../src/assets/pic2.jpg",
+                "medium":  "../src/assets/pic2.jpg",
+                "big":   "../src/assets/pic2.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 30,
+        "discount": null,
+        "ratingsCount": 12,
+        "ratingsValue": 1150,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 5,
+        "color": ["#474543","#8B8B8B","#FFFFFF"],
+        "size": ["14","22"],
+        "weight": 150,
+        "categoryId": 100
+    },   
+    { 
+        "id": 4,
+        "name": "ACER",
+        "images": [
+            {
+                "small": "../src/assets/images/Acer-2.jpg",
+                "medium": "../src/assets/images/Acer-2.jpg",
+                "big": "../src/assets/images/Acer-2.jpg"
+            },
+            {
+                "small": "../src/assets/images/Acer-2.jpg",
+                "medium": "../src/assets/images/Acer-2.jpg",
+                "big": "../src/assets/images/Acer-2.jpg"
+            },
+            {
+                "small": "../src/assets/images/Acer-2.jpg",
+                "medium": "../src/assets/images/Acer-2.jpg",
+                 "big": "../src/assets/images/Acer-2.jpg"
+            },
+            {
+                "small": "../src/assets/images/Acer-2.jpg",
+                "medium": "../src/assets/images/Acer-2.jpg",
+                "big": "../src/assets/images/Acer-2.jpg"
+            },
+            {
+                "small": "../src/assets/images/Acer-2.jpg",
+                "medium": "../src/assets/images/Acer-2.jpg",
+                "big": "../src/assets/images/Acer-2.jpg"
+            }
+        ],
+        "oldPrice": 1655,
+        "newPrice": 1379.99,
+        "discount": 20,
+        "ratingsCount": 6,
+        "ratingsValue": 500,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 2,
+        "color": ["#4C4C4C","#B6B7B9"],
+        "size": ["13.3''","15.4''","17''"],
+        "weight": 2150,
+        "categoryId": 100
+    },
+    { 
+        "id": 5,
+        "name": "LENOVO",
+        "images": [
+            {
+                "small":"../src/assets/images/APPLE-1.jpg",
+                "medium": "../src/assets/images/APPLE-1.jpg",
+                "big": "../src/assets/images/APPLE-1.jpg"
+            },
+            {
+                "small":"../src/assets/images/APPLE-1.jpg",
+                "medium": "../src/assets/images/APPLE-1.jpg",
+                "big": "../src/assets/images/APPLE-1.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 476,
+        "discount": null,
+        "ratingsCount": 2,
+        "ratingsValue": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 0,
+        "color": ["#1E1B00","#898E8B"],
+        "size": null,
+        "weight": 3250,
+        "categoryId": 100
+    },
+    { 
+        "id": 6,
+        "name": "LENOVO",
+        "images": [
+            {
+                "small": "../src/assets/images/HP-1.jpg",
+            "medium": "../src/assets/images/HP-1.jpg",
+            "big": "../src/assets/images/HP-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/HP-1.jpg",
+            "medium": "../src/assets/images/HP-1.jpg",
+            "big": "../src/assets/images/HP-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/HP-1.jpg",
+            "medium": "../src/assets/images/HP-1.jpg",
+            "big": "../src/assets/images/HP-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/HP-1.jpg",
+                "medium": "../src/assets/images/HP-1.jpg",
+                "big": "../src/assets/images/HP-1.jpg"
+            },
+            {
+                "small": "../src/assets/images/HP-1.jpg",
+                "medium": "../src/assets/images/HP-1.jpg",
+                "big": "../src/assets/images/HP-1.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 450,
+        "discount": null,
+        "ratingsCount": 4,
+        "ratingsValue": 300,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 3,
+        "color": ["#464646","#F3F3F3","#E6E6E6"],
+        "size": null,
+        "weight": 9750,
+        "categoryId": 100
+    }
+]

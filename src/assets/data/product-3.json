@@ -1,0 +1,32 @@
+{ 
+    "id": 3,
+    "name": "DELL",
+    "images": [
+        {
+            "small": "../src/assets/pic2.jpg",
+            "medium":  "../src/assets/pic2.jpg",
+            "big":   "../src/assets/pic2.jpg"
+        },
+        {
+                "small": "../src/assets/pic2.jpg",
+                "medium":  "../src/assets/pic2.jpg",
+                "big":   "../src/assets/pic2.jpg"
+        },
+        {
+                "small": "../src/assets/pic2.jpg",
+                "medium":  "../src/assets/pic2.jpg",
+                "big":   "../src/assets/pic2.jpg"
+        }
+    ],
+    "oldPrice": null,
+    "newPrice": 30,
+    "discount": null,
+    "ratingsCount": 12,
+    "ratingsValue": 1150,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+    "availibilityCount": 5,
+    "color": ["#474543","#8B8B8B","#FFFFFF"],
+    "size": ["14","22"],
+    "weight": 150,
+    "categoryId": 100
+}

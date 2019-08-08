@@ -1,0 +1,176 @@
+[    
+    { 
+        "id": 1,
+        "name": "Lenovo",
+        "images": [
+            {
+                "small": "../src/assets/pic.jpg",
+                "medium": "../src/assets/pic.jpg",
+                "big": "../src/assets/pic.jpg"
+            },
+            {
+                "small": "../src/assets/pic.jpg",
+                "medium": "../src/assets/pic.jpg",
+                "big": "../src/assets/pic.jpg"
+            },
+            {
+                "small": "../src/assets/pic.jpg",
+                "medium": "../src/assets/pic.jpg",
+                "big": "../src/assets/pic.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 475,
+        "discount": null,
+        "ratingsCount": 7,
+        "ratingsValue": 550,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 5,
+        "categoryId": 100
+    },
+    { 
+        "id": 2,
+        "name": "Acer",
+        "images": [
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            },
+            {
+                "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+            }
+        ],
+        "oldPrice": 510,
+        "newPrice": 179.99,
+        "discount": 5,
+        "ratingsCount": 6,
+        "ratingsValue": 600,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 3,
+        "categoryId": 100
+    },    
+    { 
+        "id": 3,
+        "name": "Apple",
+        "images": [
+            {
+                "small": "../src/assets/pic2.jpg",
+                "medium": "../src/assets/pic2.jpg",
+                "big": "../src/assets/pic2.jpg"
+            },
+            {
+                "small": "../src/assets/pic2.jpg",
+                "medium": "../src/assets/pic2.jpg",
+                "big": "../src/assets/pic2.jpg"
+            },
+            {
+                "small": "../src/assets/pic2.jpg",
+                "medium": "../src/assets/pic2.jpg",
+                "big": "../src/assets/pic2.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 30,
+        "discount": null,
+        "ratingsCount": 11,
+        "ratingsValue": 1050,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 5,
+        "categoryId": 100
+    },   
+    { 
+        "id": 4,
+        "name": "DELL",
+        "images": [
+            {
+                "small": "../src/assets/pic3.jpg",
+                "medium": "../src/assets/pic3.jpg",
+                "big": "../src/assets/pic3.jpg"
+            },
+            {
+                "small": "../src/assets/pic3.jpg",
+                "medium": "../src/assets/pic3.jpg",
+                "big": "../src/assets/pic3.jpg"
+            },
+            {
+                "small": "../src/assets/pic3.jpg",
+                "medium": "../src/assets/pic3.jpg",
+                "big": "../src/assets/pic3.jpg"
+            }
+        ],
+        "oldPrice": 655,
+        "newPrice": 379.99,
+        "discount": 20,
+        "ratingsCount": 6,
+        "ratingsValue": 500,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 2,
+        "categoryId": 100
+    },
+    { 
+        "id": 5,
+        "name": "asus",
+        "images": [
+            {
+                "small": "../src/assets/pic4.jpg",
+                "medium": "../src/assets/pic4.jpg",
+                "big": "../src/assets/pic4.jpg"
+            },
+            {
+                "small": "../src/assets/pic4.jpg",
+                "medium": "../src/assets/pic4.jpg",
+                "big": "../src/assets/pic4.jpg"
+            },
+            {
+                "small": "../src/assets/pic4.jpg",
+                "medium": "../src/assets/pic4.jpg",
+                "big": "../src/assets/pic4.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 876,
+        "discount": null,
+        "ratingsCount": 2,
+        "ratingsValue": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 0,
+        "categoryId": 100
+    },
+    { 
+        "id": 6,
+        "name": "Acer",
+        "images": [
+            {
+                "small": "../src/assets/pic5.jpg",
+                "medium": "../src/assets/pic5.jpg",
+                "big": "../src/assets/pic5.jpg"
+            },
+            {
+                "small": "../src/assets/pic5.jpg",
+                "medium": "../src/assets/pic5.jpg",
+                "big": "../src/assets/pic5.jpg"
+            },
+            {
+                "small": "../src/assets/pic5.jpg",
+                "medium": "../src/assets/pic5.jpg",
+                "big": "../src/assets/pic5.jpg"
+            }
+        ],
+        "oldPrice": null,
+        "newPrice": 450,
+        "discount": null,
+        "ratingsCount": 4,
+        "ratingsValue": 300,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "availibilityCount": 3,
+        "categoryId": 100
+    }
+]

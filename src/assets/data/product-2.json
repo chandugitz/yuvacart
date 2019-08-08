@@ -1,0 +1,47 @@
+{ 
+    "id": 2,
+    "name": "ASUS",
+    "images": [
+        {
+            "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+        },
+        {
+            "small": "../src/assets/pic1.jpg",
+            "medium": "../src/assets/pic1.jpg",
+            "big": "../src/assets/pic1.jpg"
+        },
+        {
+            "small": "../src/assets/pic1.jpg",
+            "medium": "../src/assets/pic1.jpg",
+            "big": "../src/assets/pic1.jpg"
+        },
+        {
+            "small": "../src/assets/pic1.jpg",
+                "medium": "../src/assets/pic1.jpg",
+                "big": "../src/assets/pic1.jpg"
+        },
+        {
+            "small": "../src/assets/pic1.jpg",
+            "medium": "../src/assets/pic1.jpg",
+            "big": "../src/assets/pic1.jpg"
+        },
+        {
+            "small": "../src/assets/pic1.jpg",
+            "medium": "../src/assets/pic1.jpg",
+            "big": "../src/assets/pic1.jpg"
+        }
+    ],
+    "oldPrice": 2510,
+    "newPrice": 2179.99,
+    "discount": 15,
+    "ratingsCount": 8,
+    "ratingsValue": 800,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+    "availibilityCount": 3,
+    "color": ["#1D1D1D","#DADADA","#597087"],
+    "size": ["24''","28''","32''"],
+    "weight": 9550,
+    "categoryId": 100
+}

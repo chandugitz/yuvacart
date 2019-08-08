@@ -1,0 +1,27 @@
+{ 
+    "id": 5,
+    "name": "APPLE",
+    "images": [
+        {
+            "small":"../src/assets/pic4.jpg",
+                "medium": "../src/assets/pic4.jpg",
+                "big": "../src/assets/pic4.jpg"
+        },
+        {
+            "small":"../src/assets/pic4.jpg",
+                "medium": "../src/assets/pic4.jpg",
+                "big": "../src/assets/pic4.jpg"
+        }
+    ],
+    "oldPrice": null,
+    "newPrice": 476,
+    "discount": null,
+    "ratingsCount": 2,
+    "ratingsValue": 200,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+    "availibilityCount": 0,
+    "color": ["#1E1B00","#898E8B"],
+    "size": null,
+    "weight": 3250,
+    "categoryId": 100
+}

@@ -1,0 +1,523 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav [opened]="sidenavOpen" [mode]="sidenavOpen ? 'side' : 'over'" class="filter-sidenav" perfectScrollbar>
+        
+        <mat-accordion displayMode="flat" multi="true">
+            <!-- <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Categories</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="categories-wrapper categories-dropdown" perfectScrollbar>
+                    <app-category-list [categories]="categories" [categoryParentId]="0" (change)="onChangeCategory($event)"></app-category-list>
+                </div>
+            </mat-expansion-panel> -->
+
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Price</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="row" fxLayoutAlign="space-between center" class="text-muted">
+                    <span>From: <b>&#xf156;{{priceFrom}}</b></span>
+                    <span>To: <b>&#xf156;{{priceTo}}</b></span>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" class="filter-price">
+                    <mat-slider color="primary" max="2000" min="1" thumb-label="true" [(ngModel)]="priceFrom"></mat-slider>
+                    <mat-slider color="warn" max="2000" min="1" thumb-label="true" [(ngModel)]="priceTo"></mat-slider>
+                </div>
+            </mat-expansion-panel>
+   <!-- PROCESSOR -->
+   <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h6>PROCESSOR</h6>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+        <mat-checkbox color="primary">Core i5</mat-checkbox>
+        <mat-checkbox color="primary">Core i3</mat-checkbox>
+        <mat-checkbox color="primary">Core i7</mat-checkbox>
+        <mat-checkbox color="primary">Ryzen 5 Quad Core</mat-checkbox>
+        <mat-checkbox color="primary">Pentium Quad Core</mat-checkbox>
+        <mat-checkbox color="primary">APU Dual Core E2</mat-checkbox>
+        <mat-checkbox color="primary">Celeron Dual Core</mat-checkbox>
+        <mat-checkbox color="primary">APU Dual Core E2</mat-checkbox>
+        <mat-checkbox color="primary">APU Dual Core A6</mat-checkbox>
+        <mat-checkbox color="primary">Atom Quad Core</mat-checkbox>
+        <mat-checkbox color="primary">APU Dual Core</mat-checkbox>
+    </div>
+</mat-expansion-panel>
+
+            <!-- SCREEN SIZE -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>SCREEN SIZE</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">14 inch -14.9 inch</mat-checkbox>
+                    <mat-checkbox color="primary">12 inch -12.9 inch</mat-checkbox>
+                    <mat-checkbox color="primary"> Below 12 inch</mat-checkbox>
+                    <mat-checkbox color="primary">13 inch -13.9 inch</mat-checkbox>
+                    <mat-checkbox color="primary">15 inch -15.9 inch</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+
+
+            <!-- OPERATIN SYSTEM -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>OPERATIN SYSTEM</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">Windows 10</mat-checkbox>
+                    <mat-checkbox color="primary">Windows 8</mat-checkbox>
+                    <mat-checkbox color="primary">Windows 7</mat-checkbox>
+                    <mat-checkbox color="primary">Linux/Ubuntu</mat-checkbox>
+                    <mat-checkbox color="primary">DOS</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+
+
+            <!-- DEDICATED GRAPHIC DESIGN -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>DEDICATED GRAPHICS MEMORY</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">2 GB</mat-checkbox>
+                    <mat-checkbox color="primary">4 GB</mat-checkbox>
+                    <mat-checkbox color="primary">6 GB</mat-checkbox>
+                    <mat-checkbox color="primary">Integrated Graphic Card</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+
+   <!-- HARD DISK DESIGN -->
+   <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h6>HARD DISK CAPACITY</h6>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+        <mat-checkbox color="primary">2 TB</mat-checkbox>
+        <mat-checkbox color="primary">320 GB</mat-checkbox>
+        <mat-checkbox color="primary">500 Gb</mat-checkbox>
+        <mat-checkbox color="primary">NA</mat-checkbox>
+        <mat-checkbox color="primary">1 TB</mat-checkbox>
+    </div>
+</mat-expansion-panel>
+
+
+            <!-- <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Color</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center" class="filter-buttons">
+                    <button mat-raised-button *ngFor="let color of colors" [style.background]="color">&nbsp;</button>
+                </div>
+            </mat-expansion-panel> -->
+
+            <!-- <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Size</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center" class="filter-buttons">
+                    <button mat-raised-button *ngFor="let size of sizes">{{size}}</button>
+                </div>
+            </mat-expansion-panel> -->
+               <!-- Processor Brand -->
+               <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Processor Brand</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">AMD</mat-checkbox>
+                    <mat-checkbox color="primary">Intel</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+
+            <!-- Discount -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>DISCOUNT</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">Less than 10%</mat-checkbox>
+                    <mat-checkbox color="primary">10% or More</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Graphic processor Name -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>GRAPHIC PROCESSOR NAME</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">NVIDIA Geforce</mat-checkbox>
+                    <mat-checkbox color="primary">NVIDIA Geforce GTX</mat-checkbox>
+                    <mat-checkbox color="primary">AMD Radeon</mat-checkbox>
+                    <mat-checkbox color="primary">Intel Integrated</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Touch Screen -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>TOUCH SCREEN</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">YES</mat-checkbox>
+                    <mat-checkbox color="primary">NO</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+
+            <!-- RAM TYPE -->
+
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>RAM TYPE</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">DDR3</mat-checkbox>
+                    <mat-checkbox color="primary">DDR4</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Usage -->
+
+
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>USAGE</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">Business</mat-checkbox>
+                    <mat-checkbox color="primary">Gaming</mat-checkbox>
+                    <mat-checkbox color="primary">Browsing</mat-checkbox>
+                    <mat-checkbox color="primary">Media and Light works</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- offers -->
+            
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>OFFERS</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column"> <mat-checkbox color="primary">Bank Offer</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- RAM capacity -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>RAM CAPACITY</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">8 GB</mat-checkbox>
+                    <mat-checkbox color="primary">6 GB</mat-checkbox>
+                    <mat-checkbox color="primary">16 GB</mat-checkbox>
+                    <mat-checkbox color="primary">2 GB</mat-checkbox>
+                    <mat-checkbox color="primary">4 GB</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+ <!-- SSD Capacity -->
+ <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h6>SSD CAPACITY</h6>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+        <mat-checkbox color="primary">512 GB</mat-checkbox>
+        <mat-checkbox color="primary">256 GB</mat-checkbox>
+        <mat-checkbox color="primary">128 GB</mat-checkbox>
+        <mat-checkbox color="primary">8 GB</mat-checkbox>
+        <mat-checkbox color="primary">240 GB</mat-checkbox>
+    </div>
+</mat-expansion-panel>
+
+             <!-- Weight -->
+             <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Weight</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">1.2 KG or Below</mat-checkbox>
+                    <mat-checkbox color="primary">1.8 KG or Below</mat-checkbox>
+                    <mat-checkbox color="primary">2.5 KG to 3.0 KG</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Graphic Processor Services -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Graphic Processor Services </h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">DELL</mat-checkbox>
+                    <mat-checkbox color="primary">ASUS</mat-checkbox>
+                    <mat-checkbox color="primary">SONY</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Graphic Memory type -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Graphic Memory type </h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">DELL</mat-checkbox>
+                    <mat-checkbox color="primary">ASUS</mat-checkbox>
+                    <mat-checkbox color="primary">SONY</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Customer RAtings-->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Customer RAtings</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">4 <i class="fas fa-star"></i> & Above</mat-checkbox>
+                    <mat-checkbox color="primary">4 <i class="fas fa-star"></i> & Above</mat-checkbox>
+                    <mat-checkbox color="primary">4 <i class="fas fa-star"></i> & Above</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Storage Type-->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Storage Type</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">DELL</mat-checkbox>
+                    <mat-checkbox color="primary">ASUS</mat-checkbox>
+                    <mat-checkbox color="primary">SONY</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <!-- Availability -->
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>TYPE</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">DELL</mat-checkbox>
+                    <mat-checkbox color="primary">ASUS</mat-checkbox>
+                    <mat-checkbox color="primary">SONY</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+
+<!-- 
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Condition</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox color="primary">New</mat-checkbox>
+                    <mat-checkbox color="primary">Used</mat-checkbox>
+                    <mat-checkbox color="primary">Not Specified</mat-checkbox>
+                </div>
+            </mat-expansion-panel> -->
+
+  <!-- HARD DISK DESIGN -->
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h6>HARD DISK CAPACITY</h6>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+        <mat-checkbox color="primary">2 TB</mat-checkbox>
+        <mat-checkbox color="primary">320 GB</mat-checkbox>
+        <mat-checkbox color="primary">500 Gb</mat-checkbox>
+        <mat-checkbox color="primary">NA</mat-checkbox>
+        <mat-checkbox color="primary">1 TB</mat-checkbox>
+    </div>
+</mat-expansion-panel>
+
+
+
+  <!-- Brand -->
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h6>BRAND</h6>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+        <mat-checkbox color="primary">Dell</mat-checkbox>
+        <mat-checkbox color="primary">Asus</mat-checkbox>
+        <mat-checkbox color="primary">Sony</mat-checkbox>
+        <mat-checkbox color="primary">HP</mat-checkbox>
+        <mat-checkbox color="primary">Lenovo</mat-checkbox>
+        <mat-checkbox color="primary">Micromax</mat-checkbox>
+        <mat-checkbox color="primary">Acer</mat-checkbox>
+        <mat-checkbox color="primary">MSI</mat-checkbox>
+        <mat-checkbox color="primary">i-Life</mat-checkbox>
+    </div>
+</mat-expansion-panel>
+<!-- 
+            <mat-expansion-panel expanded>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h6>Now starting at $1379</h6>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="row wrap" fxLayoutAlign="center center">
+                   <a [routerLink]="['/products/electronics']"><img src="assets/images/products/probook/2-medium.png" alt="" class="mw-100"></a>
+                </div>
+            </mat-expansion-panel> -->
+
+        </mat-accordion>
+
+    </mat-sidenav>
+    <mat-sidenav-content class="all-products" ngClass.gt-sm="p-left">
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center" class="filter-row mat-elevation-z1 text-muted">
+                <button *ngIf="!sidenavOpen" mat-flat-button (click)="sidenav.toggle()" value="Filter">
+                        <span class="mat-button-wrapper">Filter</span>
+                    </button>
+            <div>
+                <a mat-button [matMenuTriggerFor]="sortMenu" #sortMenuTrigger="matMenuTrigger">
+                    {{sort}}<mat-icon class="mat-icon-sm caret">arrow_drop_down</mat-icon>
+                </a>
+                <mat-menu #sortMenu="matMenu" xPosition="before" class="app-dropdown">
+                    <span (mouseleave)="sortMenuTrigger.closeMenu()">
+                        <button mat-menu-item *ngFor="let sort of sortings" (click)="changeSorting(sort)">
+                            <span>{{sort}}</span>
+                        </button>
+                    </span>
+                   
+                </mat-menu>
+               
+            </div>
+            <div> <h2>PRODUCTS</h2></div>
+            <div>
+                <a mat-button [matMenuTriggerFor]="countsMenu" #countsMenuTrigger="matMenuTrigger">
+                    Show {{count}}<mat-icon class="mat-icon-sm caret">arrow_drop_down</mat-icon>
+                </a>
+                <mat-menu #countsMenu="matMenu" xPosition="before" class="app-dropdown">
+                    <span (mouseleave)="countsMenuTrigger.closeMenu()">
+                        <button mat-menu-item *ngFor="let count of counts" (click)="changeCount(count)">
+                            <span>{{count}}</span>
+                        </button>
+                    </span>
+                </mat-menu>
+                <button mat-icon-button (click)="changeViewType('list', 100)">
+                    <mat-icon>view_list</mat-icon>
+                </button>
+                <button mat-icon-button (click)="changeViewType('grid', 33.3)">
+                    <mat-icon>view_module</mat-icon>
+                </button>
+                <button mat-icon-button (click)="changeViewType('grid', 25)">
+                    <mat-icon>view_comfy</mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <div *ngIf="viewType == 'grid'" fxLayout="row wrap" class="products-wrapper">
+            <div *ngFor="let product of products | paginate: { itemsPerPage: count, currentPage: page }" fxFlex="100" [fxFlex.gt-sm]="viewCol" fxFlex.sm="50" class="col">
+                <mat-card class="product-item text-center">
+                    <mat-chip-list *ngIf="product.discount">
+                        <mat-chip color="warn" selected="true">{{product.discount}}% OFF</mat-chip>
+                    </mat-chip-list>
+                    <a [routerLink]="['/products', product.id, product.name]" class="image-link">
+                        <img [src]="product.images[0].medium" alt="">
+                    </a>
+                    <h4 class="category text-muted">{{ ( appService.Data.categories | filterById : product.categoryId )?.name }}</h4>                                                                     
+                    <a [routerLink]="['/products', product.id, product.name]" class="title text-truncate">
+                        {{product.name}}
+                    </a>
+                    <div fxLayout="row" fxLayoutAlign="space-between center" class="prices">
+                        <div fxLayout="column" fxLayoutAlign="center start">
+                            <p class="old-price text-muted"><span *ngIf="product.oldPrice">${{product.oldPrice | number : '1.2-2'}}</span></p>
+                            <p class="new-price">${{product.newPrice | number : '1.2-2'}}</p>
+                        </div>
+                        <app-rating [ratingsCount]="product.ratingsCount" [ratingsValue]="product.ratingsValue" [direction]="'column'"></app-rating>
+                    </div>                            
+                    <div class="divider mt-2"></div>
+                    <div class="icons">
+                        <app-controls [product]="product" (onOpenProductDialog)="openProductDialog(product)"></app-controls>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+
+        <div *ngIf="viewType == 'list'" fxLayout="row wrap" class="products-wrapper">
+            <div  *ngFor="let product of products | paginate: { itemsPerPage: count, currentPage: page }" fxFlex="100" class="col">
+                <mat-card class="product-item">
+                    <div fxLayout="row wrap">
+                        <div fxFlex="100" fxFlex.gt-xs="40" class="p-2">
+                            <mat-chip-list *ngIf="product.discount" class="list-view">
+                                <mat-chip color="warn" selected="true">{{product.discount}}% OFF</mat-chip>
+                            </mat-chip-list>
+                            <a [routerLink]="['/products', product.id, product.name]" class="image-link">
+                                <img [src]="product.images[0].medium" alt="">
+                            </a>
+                        </div>
+                        <div fxFlex="100" fxFlex.gt-xs="60" class="p-2">
+                            <h4 class="category text-muted">{{ ( appService.Data.categories | filterById : product.categoryId )?.name }}</h4>                                                                     
+                            <a [routerLink]="['/products', product.id, product.name]" class="title">
+                                {{product.name}}
+                            </a>
+                            <p class="py-1 text-muted lh">{{product.description}}</p>
+                            <div fxLayout="row" fxLayoutAlign="space-between center" class="prices">
+                                <div fxLayout="column" fxLayoutAlign="center start">
+                                    <p class="old-price text-muted"><span *ngIf="product.oldPrice">${{product.oldPrice | number : '1.2-2'}}</span></p>
+                                    <p class="new-price">${{product.newPrice | number : '1.2-2'}}</p>
+                                </div>
+                                <app-rating [ratingsCount]="product.ratingsCount" [ratingsValue]="product.ratingsValue" [direction]="'column'"></app-rating>
+                            </div>                            
+                            <div class="divider"></div>
+                            <div class="icons">
+                                <app-controls [product]="product" (onOpenProductDialog)="openProductDialog(product)"></app-controls>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+
+        <div *ngIf="products.length > 0" fxLayout="row wrap">
+            <div fxFlex="100"> 
+                <mat-card class="p-0 text-center">           
+                    <pagination-controls class="product-pagination" autoHide="true" maxSize="5" (pageChange)="onPageChanged($event)"></pagination-controls>
+                </mat-card>
+            </div>
+        </div>
+        
+    </mat-sidenav-content>
+</mat-sidenav-container>
