@@ -50,7 +50,7 @@ import { ShareModule } from '@ngx-share/core';
     SidenavMenuComponent,
     BreadcrumbComponent,
     OptionsComponent,
-    FooterComponent, 
+    FooterComponent
     
           
   ], 

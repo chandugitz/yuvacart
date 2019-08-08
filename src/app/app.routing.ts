@@ -1,64 +1,72 @@
-import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule, PreloadAllModules } from "@angular/router";
+import { ModuleWithProviders } from "@angular/core";
 
-import { PagesComponent } from './pages/pages.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { PagesComponent } from "./pages/pages.component";
+import { NotFoundComponent } from "./pages/not-found/not-found.component";
+import { AuthGaurdService } from "./auth-gaurd.service";
 
-export const routes: Routes = [  
+export const routes: Routes = [
+  
   {
-    path: '',
+    path: "",
     component: PagesComponent,
     children: [
-      { path: '', loadChildren: 'app/pages/home/home.module#HomeModule' },
+      { path: "", loadChildren: "app/pages/home/home.module#HomeModule" },
       {
-        path: 'account',
-        loadChildren: 'app/pages/account/account.module#AccountModule',
-        data: { breadcrumb: 'Account Settings' }
+        path: "account",
+        loadChildren: "app/pages/account/account.module#AccountModule",
+        data: { breadcrumb: "Account Settings" }
       },
       // { path: 'compare', loadChildren: 'app/pages/compare/compare.module#CompareModule', data: { breadcrumb: 'Compare' } },
+
+      
+
       {
-        path: 'wishlist',
-        loadChildren: 'app/pages/wishlist/wishlist.module#WishlistModule',
-        data: { breadcrumb: 'Wishlist' }
+        path: "wishlist",
+        loadChildren: "app/pages/wishlist/wishlist.module#WishlistModule",
+        data: { breadcrumb: "Wishlist" }
       },
-            {
-        path: 'faq',
-        loadChildren: 'app/faq/faq.module#FaqModule',
-        data: { breadcrumb: 'Faq' }
-      },
+
+
+      
       {
-        path: 'cart',
-        loadChildren: 'app/pages/cart/cart.module#CartModule',
-        data: { breadcrumb: 'Cart' }
-      },
-      {
-        path: 'checkout',
-        loadChildren: 'app/pages/checkout/checkout.module#CheckoutModule',
-        data: { breadcrumb: 'Checkout' }
+        path: "faq",
+        loadChildren: "app/faq/faq.module#FaqModule",
+        data: { breadcrumb: "Faq" }
       },
       {
-        path: 'contact',
-        loadChildren: 'app/pages/contact/contact.module#ContactModule',
-        data: { breadcrumb: 'Contact' }
+        path: "cart",
+        loadChildren: "app/pages/cart/cart.module#CartModule",
+        data: { breadcrumb: "Cart" }
       },
       {
-        path: 'sign-in',
-        loadChildren: 'app/pages/sign-in/sign-in.module#SignInModule',
-        data: { breadcrumb: 'Sign In ' }
+        path: "checkout",
+        loadChildren: "app/pages/checkout/checkout.module#CheckoutModule",
+        data: { breadcrumb: "Checkout" }
       },
       {
-        path: 'brands',
-        loadChildren: 'app/pages/brands/brands.module#BrandsModule',
-        data: { breadcrumb: 'Brands' }
+        path: "contact",
+        loadChildren: "app/pages/contact/contact.module#ContactModule",
+        data: { breadcrumb: "Contact" }
       },
       {
-        path: 'products',
-        loadChildren: 'app/pages/products/products.module#ProductsModule',
-        data: { breadcrumb: 'All Products' }
+        path: "sign-in",
+        loadChildren: "app/pages/sign-in/sign-in.module#SignInModule",
+        data: { breadcrumb: "Sign In " }
+      },
+      {
+        path: "brands",
+        loadChildren: "app/pages/brands/brands.module#BrandsModule",
+        data: { breadcrumb: "Brands" }
+      },
+      {
+        path: "products",
+        loadChildren: "app/pages/products/products.module#ProductsModule",
+        data: { breadcrumb: "All Products" }
       }
     ]
   },
-  { path: '**', component: NotFoundComponent }
+  { path: "**", component: NotFoundComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes, {

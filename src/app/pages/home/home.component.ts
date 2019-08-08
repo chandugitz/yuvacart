@@ -10,12 +10,13 @@ import { Product } from "../../app.models";
 export class HomeComponent implements OnInit {
 
   public slides = [
-    { "title": "The biggest sale", "subtitle": "Special for today", "image": "assets/images/carousel/banner1.jpg" },
-    { "title": "Summer collection", "subtitle": "New Arrivals On Sale", "image": "assets/images/carousel/banner2.jpg" },
-    { "title": "The biggest sale", "subtitle": "Special for today", "image": "assets/images/carousel/banner3.jpg" },
-    { "title": "Summer collection", "subtitle": "New Arrivals On Sale", "image": "assets/images/carousel/banner4.jpg" },
-    { "title": "The biggest sale", "subtitle": "Special for today", "image": "assets/images/carousel/banner5.jpg" }  
-];
+    { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner1.jpg' },
+    { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'assets/images/carousel/banner2.jpg' },
+    { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner3.jpg' },
+    { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'assets/images/carousel/banner4.jpg' },
+    { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner5.jpg' }
+  ];
+
   public brands = [];
   public banners = [];
   public featuredProducts: Array<Product>;
@@ -24,13 +25,12 @@ export class HomeComponent implements OnInit {
   public newArrivalsProducts: Array<Product>;
 
 
-  constructor(public appService:AppService) { console.log(this.slides); }
+  constructor(public appService:AppService) { }
 
   ngOnInit() {
     this.getBanners();
     this.getProducts("featured");
     this.getBrands();
-    // this.getSlides();
   }
 
   public onLinkClick(e){
@@ -69,11 +69,6 @@ export class HomeComponent implements OnInit {
 
   public getBrands(){
     this.brands = this.appService.getBrands();
-  }
-
-  public getSlides() {
-    this.appService.getSlides().subscribe(res => this.slides = res);
-    console.log(this.slides);
   }
 
 }

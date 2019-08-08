@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { InformationComponent } from './information/information.component';
 import { AddressesComponent } from './addresses/addresses.component';
 import { OrdersComponent } from './orders/orders.component';
+import { LogoutComponent } from '../logout/logout.component';
 
 export const routes = [
   { 
@@ -17,7 +18,8 @@ export const routes = [
           { path: 'dashboard', component: DashboardComponent, data: {  breadcrumb: 'Dashboard' } },
           { path: 'information', component: InformationComponent, data: {  breadcrumb: 'Information' } },
           { path: 'addresses', component: AddressesComponent, data: {  breadcrumb: 'Addresses' } },
-          { path: 'orders', component: OrdersComponent, data: {  breadcrumb: 'Orders' } }
+          { path: 'orders', component: OrdersComponent, data: {  breadcrumb: 'Orders' } },
+          { path: 'logout', component: LogoutComponent }
       ]
   }
 ];
@@ -34,7 +36,8 @@ export const routes = [
     DashboardComponent,
     InformationComponent,
     AddressesComponent,
-    OrdersComponent
+    OrdersComponent,
+    LogoutComponent
   ]
 })
 export class AccountModule { }

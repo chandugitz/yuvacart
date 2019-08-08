@@ -22,8 +22,6 @@ export class AppService {
         null //totalPrice
     )
     public url = "assets/data/";
-    public jsonUrl = '/assets/data/slides.json';
-
     constructor(public http:HttpClient, public snackBar: MatSnackBar) { }
     
     public getCategories(): Observable<Category[]>{
@@ -100,10 +98,6 @@ export class AppService {
             { name: 'sony', image: 'assets/images/brands/sony.jpg' },
            
         ];
-    }
-
-    public getSlides(): Observable<any[]> {
-        return this.http.get<any>(this.jsonUrl);
     }
 
     public getCountries(){
@@ -382,5 +376,4 @@ export class AppService {
             { value: 'express', name: 'Express Delivery', desc: '$29.99 / Delivery in 1 business Days' }
         ]
     }
-
 } 
