@@ -1,0 +1,356 @@
+[
+    {
+        "heading" : "processor",
+        "list" : [
+            {
+                "id" : 1,
+                "name" : "Core i5"
+            },
+            {
+                "id" : 2,
+                "name" : "Core i3"
+            },
+            {
+                "id" : 3,
+                "name" : "Core i7"
+            },
+            {
+                "id" : 4,
+                "name" : "Ryzen 5 Quad Core"
+            },
+            {
+                "id" : 5,
+                "name" : "Pentium Quad Core"
+            },
+            {
+                "id" : 6,
+                "name" : "APU Dual Core E2"
+            },
+            {
+                "id" : 7,
+                "name" : "Celeron Dual Core"
+            },
+            {
+                "id" : 8,
+                "name" : "APU Dual Core E2"
+            },
+            {
+                "id" : 9,
+                "name" : "APU Dual Core A6"
+            },
+            {
+                "id" : 10,
+                "name" : "Atom Quad Core"
+            },
+            {
+                "id" : 11,
+                "name" : "APU Dual Core"
+            }
+        ]
+    },
+    {
+        "heading" : "screen size",
+        "list" : [
+            {
+                "name" : "14 inch -14.9 inch"
+            },
+            {
+                "name" : "12 inch -12.9 inch"
+            },
+            {
+                "name" : "Below 12 inch"
+            },
+            {
+                "name" : "13 inch -13.9 inch"
+            },
+            {
+                "name" : "15 inch -15.9 inch"
+            }
+        ]
+    },
+    {
+        "heading" : "operating system",
+        "list" : [
+            {
+                "name" : "Windows 10"
+            },
+            {
+                "name" : "Windows 8"
+            },
+            {
+                "name" : "Windows 7"
+            },
+            {
+                "name" : "Linux/Ubuntu"
+            },
+            {
+                "name" : "DOS"
+            }
+        ]
+    },
+    {
+        "heading" : "dedicated graphics memory",
+        "list" : [
+            {
+                "name" : "2 GB"
+            },
+            {
+                "name" : "4 GB"
+            },
+            {
+                "name" : "6 GB"
+            },
+            {
+                "name" : "Integrated Graphic Card"
+            }
+        ]
+    },
+    {
+        "heading" : "hard disk capacity",
+        "list" : [
+            {
+                "name" : "2 TB"
+            },
+            {
+                "name" : "320 TB"
+            },
+            {
+                "name" : "500 GB"
+            },
+            {
+                "name" : "NA"
+            },
+            {
+                "name" : "1 TB"
+            }
+        ]
+    },
+    {
+        "heading" : "processor brand",
+        "list" : [
+            {
+                "name" : "AMD"
+            },
+            {
+                "name" : "Intel"
+            }
+        ]
+    },
+    {
+        "heading" : "discount",
+        "list" : [
+            {
+                "name" : "Less than 10%"
+            },
+            {
+                "name" : "10% or More"
+            }
+        ]
+    },
+    {
+        "heading" : "graphic processor name",
+        "list" : [
+            {
+                "name" : "NVIDIA Geforce"
+            },
+            {
+                "name" : "NVIDIA Geforce GTX"
+            },
+            {
+                "name" : "AMD Radeon"
+            },
+            {
+                "name" : "Intel Integrated"
+            }
+        ]
+    },
+    {
+        "heading" : "touch screen",
+        "list" : [
+            {
+                "name" : "Yes"
+            },
+            {
+                "name" : "No"
+            }
+        ]
+    },
+    {
+        "heading" : "ram type",
+        "list" : [
+            {
+                "name" : "DDR3"
+            },
+            {
+                "name" : "DDR4"
+            }
+        ]
+    },
+    {
+        "heading" : "usage",
+        "list" : [
+            {
+                "name" : "Business"
+            },
+            {
+                "name" : "Gaming"
+            },
+            {
+                "name" : "Browsing"
+            },
+            {
+                "name" : "Media and Light works"
+            }
+        ]
+    },
+    {
+        "heading" : "OFFERS",
+        "list" : [
+            {
+                "name" : "Bank Offer"
+            }
+        ]
+    },
+    {
+        "heading" : "ram capacity",
+        "list" : [
+            {
+                "name" : "8 GB"
+            },
+            {
+                "name" : "6 GB"
+            },
+            {
+                "name" : "16 GB"
+            },
+            {
+                "name" : "2 GB"
+            },
+            {
+                "name" : "4 GB"
+            }
+        ]
+    },
+    {
+        "heading" : "ssd",
+        "list" : [
+            {
+                "name" : "512 GB"
+            },
+            {
+                "name" : "256 GB"
+            },
+            {
+                "name" : "128 GB"
+            },
+            {
+                "name" : "8 GB"
+            },
+            {
+                "name" : "240 GB"
+            }
+        ]
+    },
+    {
+        "heading" : "weight",
+        "list" : [
+            {
+                "name" : "1.2 KG or Below"
+            },
+            {
+                "name" : "1.8 KG or Below"
+            },
+            {
+                "name" : "2.5 KG to 3.0 KG"
+            }
+        ]
+    },
+    {
+        "heading" : "graphic service processor services",
+        "list" : [
+            {
+                "name" : "DELL"
+            },
+            {
+                "name" : "ASUS"
+            },
+            {
+                "name" : "SONY"
+            }
+        ]
+    },
+    {
+        "heading" : "graphic memory type",
+        "list" : [
+            {
+                "name" : "DELL"
+            },
+            {
+                "name" : "ASUS"
+            },
+            {
+                "name" : "SONY"
+            }
+        ]
+    },
+    {
+        "heading" : "customer rating",
+        "list" : [
+            {
+                "name" : "4 * & Above"
+            },
+            {
+                "name" : "3 * & Above"
+            },
+            {
+                "name" : "2 * & Above"
+            }
+        ]
+    },
+    {
+        "heading" : "storage type",
+        "list" : [
+            {
+                "name" : "DELL"
+            },
+            {
+                "name" : "ASUS"
+            },
+            {
+                "name" : "SONY"
+            }
+        ]
+    },
+    {
+        "heading" : "brand",
+        "list" : [
+            {
+                "name" : "Dell"
+            },
+            {
+                "name" : "Asus"
+            },
+            {
+                "name" : "Sony"
+            },
+            {
+                "name" : "HP"
+            },
+            {
+                "name" : "Lenovo"
+            },
+            {
+                "name" : "Micromax"
+            },
+            {
+                "name" : "Acer"
+            },
+            {
+                "name" : "MSI"
+            },
+            {
+                "name" : "i-Life"
+            }
+        ]
+    }
+]

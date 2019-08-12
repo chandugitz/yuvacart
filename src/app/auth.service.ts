@@ -26,6 +26,7 @@ export class AuthService {
   }
 
   logoutUser() {
+    console.log('triggered!')
     localStorage.removeItem('token')
     this._router.navigate(['/sign-in'])
   }

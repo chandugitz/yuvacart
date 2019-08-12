@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../../app.service';
-import { Product } from "../../app.models";
+import { Product } from '../../app.models';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'assets/images/carousel/banner4.jpg' },
     { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner5.jpg' }
   ];
-
+  // public slides = [];
   public brands = [];
   public banners = [];
   public featuredProducts: Array<Product>;
@@ -29,8 +29,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.getBanners();
-    this.getProducts("featured");
+    this.getProducts('featured');
     this.getBrands();
+    // this.getSlides();
   }
 
   public onLinkClick(e){
@@ -71,4 +72,15 @@ export class HomeComponent implements OnInit {
     this.brands = this.appService.getBrands();
   }
 
+  // public getSlides() {
+  //   this.appService.getSlides().subscribe(
+  //     (res) => { 
+  //       this.slides = res 
+  //       console.log(this.slides)
+  //     },
+  //     (err) => {
+  //       console.log(err)
+  //     }
+  //     )
+  // }
 }

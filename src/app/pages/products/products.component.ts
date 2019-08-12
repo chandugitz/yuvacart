@@ -28,6 +28,9 @@ export class ProductsComponent implements OnInit {
   public colors = ["#5C6BC0","#66BB6A","#EF5350","#BA68C8","#FF4081","#9575CD","#90CAF9","#B2DFDB","#DCE775","#FFD740","#00E676","#FBC02D","#FF7043","#F5F5F5","#000000"];
   public sizes = ["S","M","L","XL","2XL","32","36","38","46","52","13.3\"","15.4\"","17\"","21\"","23.4\""];
   public page:any;
+  public prodcutconflist;
+  public lastAction;
+  public filterargs:string = '';
 
   constructor(private activatedRoute: ActivatedRoute, public appService:AppService, public dialog: MatDialog, private router: Router) { }
 
@@ -36,6 +39,7 @@ export class ProductsComponent implements OnInit {
     this.sort = this.sortings[0];
     this.sub = this.activatedRoute.params.subscribe(params => {
       //console.log(params['name']);
+      this.getProductsConfigList();
     });
     if(window.innerWidth < 960){
       this.sidenavOpen = false;
@@ -49,12 +53,13 @@ export class ProductsComponent implements OnInit {
     this.getAllProducts();   
   }
 
-  public getAllProducts(){
-    this.appService.getProducts("featured").subscribe(data=>{
-      this.products = data; 
-      //for show more product  
-      for (var index = 0; index < 3; index++) {
-        this.products = this.products.concat(this.products);        
+  public getAllProducts() {
+    this.appService.getProducts('featured').subscribe(data => {
+      this.products = data;
+      // console.log(data);
+      // for show more product
+      for (let index = 0; index < 3; index++) {
+        this.products = this.products.concat(this.products);
       }
     });
   }
@@ -111,16 +116,31 @@ export class ProductsComponent implements OnInit {
     });
   }
 
-  public onPageChanged(event){
+  public onPageChanged(event) {
       this.page = event;
-      this.getAllProducts(); 
-      window.scrollTo(0,0); 
+      this.getAllProducts();
+      window.scrollTo(0, 0);
   }
 
   public onChangeCategory(event){
-    if(event.target){
+    if (event.target) {
       this.router.navigate(['/products', event.target.innerText.toLowerCase()]); 
-    }   
+    }
   }
 
+  public getProductsConfigList() {
+    this.appService.getProductsConfigList().subscribe(
+      (data) => {
+        this.prodcutconflist = data;
+      // console.log(this.prodcutconflist);
+    }, (err) => {
+      console.log('error!!!' + err);
+    }
+    )
+  }
+
+  onChangeFilter(lists) {
+    this.filterargs = lists;
+    console.log('check box values : ' + this.filterargs);
+  }
 }

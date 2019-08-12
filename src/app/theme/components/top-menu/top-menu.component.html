@@ -10,7 +10,7 @@
     </a>
     <mat-menu #accountMenu="matMenu" [overlapTrigger]="false" xPosition="before" class="app-dropdown account">
         <span (mouseleave)="accountMenuTrigger.closeMenu()">
-            <div fxLayout="row" fxLayoutAlign="space-around center" class="user-info">                   
+            <div fxLayout="row" fxLayoutAlign="space-around center" class="user-info" *ngIf="loginFlag">                   
                 <img src="assets/images/others/user.jpg" alt="user-image" width="50">
                 <p>Vijaya Madhuri <br> <small><mat-icon class="mat-icon-xs"></mat-icon></small></p>
             </div>
@@ -36,9 +36,13 @@
                 <span>Help</span> 
             </a>
             <div class="divider"></div>
-            <a mat-menu-item routerLink="/sign-in"> 
+            <a mat-menu-item routerLink="/account/logout" *ngIf="loginFlag"> 
                 <mat-icon class="mat-icon-sm">power_settings_new</mat-icon>
                 <span>Sign Out</span> 
+            </a>
+            <a mat-menu-item routerLink="/sign-in" *ngIf="!loginFlag"> 
+                <mat-icon class="mat-icon-sm">power_settings_new</mat-icon>
+                <span>Sign In</span> 
             </a>
         </span>
     </mat-menu>    

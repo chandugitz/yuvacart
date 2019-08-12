@@ -21,8 +21,12 @@ export class AppService {
         [],  // cartList
         null //totalPrice
     )
-    public url = "assets/data/";
-    constructor(public http:HttpClient, public snackBar: MatSnackBar) { }
+    public url = 'assets/data/';
+    constructor(public http: HttpClient, public snackBar: MatSnackBar) { }
+
+    public getProductsConfigList() {
+        return this.http.get(this.url + 'products-config-list.json');
+    }
     
     public getCategories(): Observable<Category[]>{
         return this.http.get<Category[]>(this.url + 'categories.json');
@@ -376,4 +380,8 @@ export class AppService {
             { value: 'express', name: 'Express Delivery', desc: '$29.99 / Delivery in 1 business Days' }
         ]
     }
+
+    // public getSlides(): Observable<any[]> {
+    //     return this.http.get<any>('../../assets/data/slides.json')
+    // }
 } 

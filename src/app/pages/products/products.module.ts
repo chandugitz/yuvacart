@@ -9,6 +9,7 @@ import { PipesModule } from '../../theme/pipes/pipes.module';
 import { ProductsComponent } from './products.component';
 import { ProductComponent } from './product/product.component';
 import { ProductZoomComponent } from './product/product-zoom/product-zoom.component';
+import { MyCatPipe } from '../../my-cat.pipe';
 
 export const routes = [
   { path: '', component: ProductsComponent, pathMatch: 'full' },
@@ -28,9 +29,10 @@ export const routes = [
     PipesModule
   ],
   declarations: [
-    ProductsComponent, 
-    ProductComponent, 
-    ProductZoomComponent
+    ProductsComponent,
+    ProductComponent,
+    ProductZoomComponent,
+    MyCatPipe
   ],
   entryComponents:[
     ProductZoomComponent

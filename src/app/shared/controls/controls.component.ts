@@ -3,6 +3,8 @@ import { MatSnackBar } from '@angular/material';
 import { Data, AppService } from '../../app.service';
 import { Product } from '../../app.models';
 import { ShareButtons } from '@ngx-share/core';
+import { AuthService } from '../../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-controls',
@@ -16,7 +18,7 @@ export class ControlsComponent implements OnInit {
   @Output() onQuantityChange: EventEmitter<any> = new EventEmitter<any>();
   public count:number = 1;
   public align = 'center center';
-  constructor(public appService:AppService, public snackBar: MatSnackBar,public share: ShareButtons) { }
+  constructor(public appService: AppService, public snackBar: MatSnackBar, public share: ShareButtons, public _authService: AuthService, public _router: Router) { }
 
   ngOnInit() {
     if(this.product){
@@ -25,14 +27,12 @@ export class ControlsComponent implements OnInit {
     this.layoutAlign(); 
   }
 
-  public layoutAlign(){
-    if(this.type == 'all'){
+  public layoutAlign() {
+    if (this.type === 'all') {
       this.align = 'space-between center';
-    }
-    else if(this.type == 'wish'){
+    } else if (this.type === 'wish'){
       this.align = 'start center';
-    }
-    else{
+    } else {
       this.align = 'center center';
     }
   }
@@ -66,12 +66,18 @@ export class ControlsComponent implements OnInit {
     }
   }
 
-  public addToCompare(product:Product){
+  public addToCompare(product: Product) {
     this.appService.addToCompare(product);
   }
 
-  public addToWishList(product:Product){
-    this.appService.addToWishList(product);
+  public addToWishList(product: Product) {
+    if (this._authService.loggedIn()) {
+      this.appService.addToWishList(product);
+      return true
+    } else {
+      this._router.navigate(['/sign-in'])
+      return false
+    }
   }
 
   public addToCart(product:Product){
