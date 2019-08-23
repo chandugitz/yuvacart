@@ -20,16 +20,16 @@ export class TopMenuComponent implements OnInit {
   public flag: any;
   public loginFlag;
 
-  constructor(public appService:AppService, private authService: AuthService) { }
+  constructor(public appService: AppService, private authService: AuthService) { }
 
   ngOnInit() {
     this.currency = this.currencies[0];
-    this.flag = this.flags[0];
-    if (this.authService.loggedIn()) {
-      this.loginFlag = true;
-    } else {
-      this.loginFlag = false;
-    }
+    // this.flag = this.flags[0];
+    // if (this.authService.loggedIn()) {
+    //   this.loginFlag = true;
+    // } else {
+    //   this.loginFlag = false;
+    // }
   }
 
   public changeCurrency(currency){

@@ -36,11 +36,11 @@
                 <span>Help</span> 
             </a>
             <div class="divider"></div>
-            <a mat-menu-item routerLink="/account/logout" *ngIf="loginFlag"> 
+            <a mat-menu-item routerLink="/account/logout" *ngIf="authService.loggedIn()"> 
                 <mat-icon class="mat-icon-sm">power_settings_new</mat-icon>
                 <span>Sign Out</span> 
             </a>
-            <a mat-menu-item routerLink="/sign-in" *ngIf="!loginFlag"> 
+            <a mat-menu-item routerLink="/sign-in" *ngIf="!authService.loggedIn()"> 
                 <mat-icon class="mat-icon-sm">power_settings_new</mat-icon>
                 <span>Sign In</span> 
             </a>
