@@ -36,7 +36,7 @@
                 <span>Help</span> 
             </a>
             <div class="divider"></div>
-            <a mat-menu-item routerLink="/account/logout" *ngIf="authService.loggedIn()"> 
+            <a mat-menu-item (click)="authService.logoutUser()" *ngIf="authService.loggedIn()"> 
                 <mat-icon class="mat-icon-sm">power_settings_new</mat-icon>
                 <span>Sign Out</span> 
             </a>
