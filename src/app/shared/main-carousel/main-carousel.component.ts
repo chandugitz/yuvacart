@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SwiperConfigInterface, SwiperPaginationInterface } from 'ngx-swiper-wrapper';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-main-carousel',
@@ -8,14 +9,14 @@ import { SwiperConfigInterface, SwiperPaginationInterface } from 'ngx-swiper-wra
 })
 export class MainCarouselComponent implements OnInit {
   @Input('slides') slides: Array<any> = [];
- 
+  
   public config: SwiperConfigInterface = {};
+  imgPath = environment.imgBasePath;
 
   private pagination: SwiperPaginationInterface = {
     el: '.swiper-pagination',
     clickable: true
   };
-  
   constructor() { }
 
   ngOnInit() { }

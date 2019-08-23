@@ -3,7 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { MatSnackBar } from '@angular/material';
 import { Category, Product } from './app.models';
+import { environment } from '../environments/environment';
 
+const API_URL = environment.apiurl;
 export class Data {
     constructor(public categories: Category[],
                 public compareList: Product[],
@@ -32,16 +34,18 @@ export class AppService {
         return this.http.get<Category[]>(this.url + 'categories.json');
     }
    
-    public getProducts(type): Observable<Product[]>{        
-        return this.http.get<Product[]>(this.url + type + '-products.json');
+    public getProducts(type): Observable<Product[]> {
+        return this.http.get<Product[]>(API_URL + 'products');
+        // return this.http.get<Product[]>(this.url + type + '-products.json');
+
     }
 
     public getProductById(id): Observable<Product>{
         return this.http.get<Product>(this.url + 'product-' + id + '.json');
     }
 
-    public getBanners(): Observable<any[]>{
-        return this.http.get<any[]>(this.url + 'banners.json');
+    public getBanners(): Observable<any[]> {
+        return this.http.get<any>(API_URL + 'categories');
     }
 
     public addToCompare(product:Product){
@@ -90,18 +94,18 @@ export class AppService {
         this.snackBar.open(message, '×', { panelClass: [status], verticalPosition: 'top', duration: 3000 });
     }
 
-    public getBrands(){
-        return [  
-            { name: 'dell1', image: 'assets/images/brands/dell1.jpg' },
-            { name: 'hp', image: 'assets/images/brands/hp.jpg' },  
-            { name: 'jbl', image: 'assets/images/brands/jbl.jpg' },
-            { name: 'lenova', image: 'assets/images/brands/lenova.jpg' },
-            { name: 'mi', image: 'assets/images/brands/mi.jpg' },
-            { name: 'panasonic', image: 'assets/images/brands/panasonic.jpg' },
-            { name: 'samsung', image: 'assets/images/brands/samsung.jpg' },
-            { name: 'sony', image: 'assets/images/brands/sony.jpg' },
-           
-        ];
+    public getBrands(): Observable<any[]> {
+        // return [
+        //     { name: 'dell1', image: 'assets/images/brands/dell1.jpg' },
+        //     { name: 'hp', image: 'assets/images/brands/hp.jpg' },
+        //     { name: 'jbl', image: 'assets/images/brands/jbl.jpg' },
+        //     { name: 'lenova', image: 'assets/images/brands/lenova.jpg' },
+        //     { name: 'mi', image: 'assets/images/brands/mi.jpg' },
+        //     { name: 'panasonic', image: 'assets/images/brands/panasonic.jpg' },
+        //     { name: 'samsung', image: 'assets/images/brands/samsung.jpg' },
+        //     { name: 'sony', image: 'assets/images/brands/sony.jpg' }
+        // ];
+        return this.http.get<any>(API_URL + 'brands');
     }
 
     public getCountries(){
@@ -381,7 +385,7 @@ export class AppService {
         ]
     }
 
-    // public getSlides(): Observable<any[]> {
-    //     return this.http.get<any>('../../assets/data/slides.json')
-    // }
-} 
+    public getSlides(): Observable<any[]> {
+        return this.http.get<any>(API_URL + 'slider');
+    }
+}

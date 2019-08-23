@@ -2,19 +2,19 @@
 <div class="banners-container" fxLayout="column" fxLayout.gt-sm="row" *ngIf="banners.length > 0">
 
     <div fxLayout="row" fxLayout.gt-sm="column" fxLayout.xs="column" fxFlex="100" fxFlex.gt-sm="25">
-        <div fxLayout="row" fxFlexOrder="2" fxFlexOrder.gt-sm="1" fxFlex="50" fxFlex.gt-sm="50">
+        <div *ngFor="let banner of banners" fxLayout="row" fxFlexOrder="2" fxFlexOrder.gt-sm="1" fxFlex="50" fxFlex.gt-sm="50">
 
-            <div class="banner" fxFlex [ngStyle]="getBgImage(0)">
+            <div class="banner" fxFlex [ngStyle]="getBgImage(imagePath+banner.image_cat)">
                 <div class="info" fxLayoutAlign="center center">
                     <div class="px-2" fxLayout="column" fxLayoutAlign="end center">
-                        <h2 class="title">{{getBanner(0).title}}</h2>
-                        <h4 class="subtitle">{{getBanner(0).subtitle}}</h4>
+                        <h2 class="title">{{banner.cat_eng}}</h2>
+                        <h4 class="subtitle">{{banner.cat_tel}}</h4>
                         <a [routerLink]="['/products']" mat-raised-button color="primary" class="mt-2">Shop now</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div fxLayout="row" fxFlexOrder="2" fxFlexOrder.gt-sm="1" fxFlex="50" fxFlex.gt-sm="50">
+        <!-- <div fxLayout="row" fxFlexOrder="2" fxFlexOrder.gt-sm="1" fxFlex="50" fxFlex.gt-sm="50">
 
             <div class="banner" fxFlex [ngStyle]="getBgImage(1)">
                 <div class="info" fxLayoutAlign="center center">
@@ -25,10 +25,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
-    <div fxLayout="row" fxLayout.gt-sm="column" fxLayout.xs="column" fxFlex="100" fxFlex.gt-sm="25">
+    <!-- <div fxLayout="row" fxLayout.gt-sm="column" fxLayout.xs="column" fxFlex="100" fxFlex.gt-sm="25">
         <div fxLayout="row" fxFlexOrder="2" fxFlexOrder.gt-sm="1" fxFlex="50" fxFlex.gt-sm="50">
 
             <div class="banner" fxFlex [ngStyle]="getBgImage(2)">
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </div>
 

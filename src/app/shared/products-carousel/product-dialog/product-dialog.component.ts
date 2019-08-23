@@ -3,6 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { Data, AppService } from '../../../app.service';
 import { Product } from '../../../app.models';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-product-dialog',
@@ -12,6 +13,7 @@ import { Product } from '../../../app.models';
 })
 export class ProductDialogComponent implements OnInit {
   public config: SwiperConfigInterface = {};
+  imagePath = environment.imgBasePath;
   constructor(public appService:AppService, 
               public dialogRef: MatDialogRef<ProductDialogComponent>,
               @Inject(MAT_DIALOG_DATA) public product: Product) { }

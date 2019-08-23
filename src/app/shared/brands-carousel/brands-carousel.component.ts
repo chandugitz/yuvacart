@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-brands-carousel',
@@ -11,7 +12,7 @@ export class BrandsCarouselComponent {
   @Input('brands') brands: Array<any> = [];
 
   public config: SwiperConfigInterface = { };
-  
+  imagePath = environment.imgBasePath;
   constructor() { }
 
   ngAfterViewInit(){

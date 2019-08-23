@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material';
 import { ProductDialogComponent } from './product-dialog/product-dialog.component';
 import { Data, AppService } from '../../app.service';
 import { Product } from "../../app.models";
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-products-carousel',
@@ -16,6 +17,7 @@ export class ProductsCarouselComponent implements OnInit {
 
   @Input('products') products: Array<Product> = [];
   public config: SwiperConfigInterface = {};
+  imagePath = environment.imgBasePath;
   constructor(public appService:AppService, public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {

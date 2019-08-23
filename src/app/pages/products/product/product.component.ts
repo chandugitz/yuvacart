@@ -73,8 +73,9 @@ export class ProductComponent implements OnInit {
   }
 
   public getRelatedProducts(){
-    this.appService.getProducts('related').subscribe(data => {
-      this.relatedProducts = data;
+    this.appService.getProducts('related').subscribe(res => {
+      this.relatedProducts = res;
+      console.log(this.relatedProducts)
     })
   }
 

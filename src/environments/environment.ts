@@ -4,5 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiurl : 'http://yuvakart.mathrusriinfotech.in/api/',
+  imgBasePath : 'https://www.yuvakart.mathrusriinfotech.in/assets/uploads/gallery/'
 };

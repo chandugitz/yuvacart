@@ -19,5 +19,9 @@ export class Product {
               public color: Array<string>,
               public size: Array<string>,
               public weight: number,
-              public categoryId: number){ }
+              public categoryId: number,
+              public subcat_eng: string,
+              public mrp: number,
+              public costprice: number
+              ){ }
 }

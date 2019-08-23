@@ -58,9 +58,9 @@ export class ProductsComponent implements OnInit {
       this.products = data;
       // console.log(data);
       // for show more product
-      for (let index = 0; index < 3; index++) {
-        this.products = this.products.concat(this.products);
-      }
+      // for (let index = 0; index < 3; index++) {
+      //   this.products = this.products.concat(this.products);
+      // }
     });
   }
 
@@ -77,7 +77,11 @@ export class ProductsComponent implements OnInit {
   }
 
   public getBrands(){
-    this.brands = this.appService.getBrands();
+    // this.brands = this.appService.getBrands();
+    this.appService.getBrands().subscribe(
+      result => this.brands = result,
+      error => console.log(error)
+    );
   }
 
   ngOnDestroy() {

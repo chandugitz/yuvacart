@@ -2,9 +2,11 @@
     <div class="swiper-container h-100" [swiper]="config">
         <div class="swiper-wrapper h-100">      
             <div *ngFor="let brand of brands" class="swiper-slide">
+                <!-- {{brand.brand}}
+                {{imagePath+brand.image}} -->
                 <div class="p-0">
-                    <a [routerLink]="['/brands', brand.name]" class="brand-item">
-                        <img [attr.data-src]="brand.image" class="swiper-lazy">
+                    <a [routerLink]="['/brands', brand.brand]" class="brand-item">
+                        <img [attr.data-src]="imagePath+brand.image" class="swiper-lazy">
                     </a>
                     <div class="swiper-lazy-preloader"></div>
                 </div>
