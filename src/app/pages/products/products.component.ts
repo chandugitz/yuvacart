@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material';
 import { ProductDialogComponent } from '../../shared/products-carousel/product-dialog/product-dialog.component';
 import { AppService } from '../../app.service';
 import { Product, Category } from "../../app.models";
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-products',
@@ -31,7 +32,7 @@ export class ProductsComponent implements OnInit {
   public prodcutconflist;
   public lastAction;
   public filterargs:string = '';
-
+  imagePath = environment.imgBasePath;
   constructor(private activatedRoute: ActivatedRoute, public appService:AppService, public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
